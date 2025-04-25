@@ -3,7 +3,7 @@
 A responsive and interactive quiz application that allows users to test their knowledge across various categories.
 
 ## Live Link 
-- **https://quiz-ten-orcin.vercel.app/
+- https://quiz-ten-orcin.vercel.app/
 
 ## Features
 
