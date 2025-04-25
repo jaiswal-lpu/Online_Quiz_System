@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>Quiz Challenge</h1>
+            <div class="rules" style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-radius: 10px;">
+                <h2 style="color: #333; margin-bottom: 10px;">Rules:</h2>
+                <ul style="list-style-type: disc; padding-left: 20px;">
+                    <li style="margin: 8px 0; color: #444;">You have 60 seconds to complete the quiz</li>
+                    <li style="margin: 8px 0; color: #444;">Each question has 4 possible answers</li>
+                    <li style="margin: 8px 0; color: #444;">Select the correct answer to score points</li>
+                    <li style="margin: 8px 0; color: #444;">Incorrect answers will not deduct points</li>
+                    <li style="margin: 8px 0; color: #444;">You cannot change your answer once selected</li>
+                </ul>
+            </div>
+            <a class="btn" href="#" id="play-btn">Play</a>
+            <a class="btn" href="#" id="highscores-btn">High Scores</a>
+            <div id="category-container" class="hide">
+                <h2>Select Category</h2>
+                <div class="category-list">
+                    <button class="category-btn" data-category="9">General Knowledge</button>
+                    <button class="category-btn" data-category="18">Computer Science</button>
+                    <button class="category-btn" data-category="21">Sports</button>
+                    <button class="category-btn" data-category="23">History</button>
+                    <button class="category-btn" data-category="27">Animals</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game" class="justify-center flex-column hide">
+            <div id="hud">
+                <div class="hud-item">
+                    <p class="hud-prefix">Question</p>
+                    <h2 class="hud-main-text" id="question-counter"></h2>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">Score</p>
+                    <h2 class="hud-main-text" id="score">0</h2>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">Time</p>
+                    <h2 class="hud-main-text" id="timer">60</h2>
+                </div>
+            </div>
+            <h2 id="question"></h2>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1"></p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2"></p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3"></p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4"></p>
+            </div>
+            <div id="loader"></div>
+        </div>
+
+        <div id="end" class="flex-center flex-column hide">
+            <h1>Game Over!</h1>
+            <h2 id="final-score"></h2>
+            <form>
+                <input type="text" name="username" id="username" placeholder="Enter your name">
+                <button type="submit" class="btn" id="save-score-btn" disabled>Save Score</button>
+            </form>
+            <a class="btn" href="#" id="play-again-btn">Play Again</a>
+            <a class="btn" href="#" id="go-home-btn">Go Home</a>
+        </div>
+
+        <div id="highscores" class="flex-center flex-column hide">
+            <h1>High Scores</h1>
+            <ul id="highscores-list"></ul>
+            <a class="btn" href="#" id="go-home-from-scores-btn">Go Home</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
