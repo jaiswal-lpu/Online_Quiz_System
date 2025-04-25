@@ -1,5 +1,9 @@
 # Interactive Quiz Application
-
+![Quiz App Preview Banner](https://raw.githubusercontent.com/jaiswal-lpu/Online_Quiz_System/main/assets/home.png)
+![Quiz App Preview Banner](https://raw.githubusercontent.com/jaiswal-lpu/Online_Quiz_System/main/assets/question.png)
+![Quiz App Preview Banner](https://raw.githubusercontent.com/jaiswal-lpu/Online_Quiz_System/main/assets/score.png)
+![Quiz App Preview Banner](https://raw.githubusercontent.com/jaiswal-lpu/Online_Quiz_System/main/assets/submission.png)
+![Quiz App Preview Banner](https://raw.githubusercontent.com/jaiswal-lpu/Online_Quiz_System/main/assets/highscore.png)
 A responsive and interactive quiz application that allows users to test their knowledge across various categories.
 
 ## Live Link 
